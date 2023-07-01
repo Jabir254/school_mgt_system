@@ -5,11 +5,17 @@
 	<head>
 		<link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet" />
 		<title>Edusync</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
 	</head>
-	<body>
+	<body class="d-flex flex-column min-vh-100">
 		<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">EduSync</a>
+				<a class="navbar-brand" href="#">
+					<i class="fa-solid fa-graduation-cap fa-lg"></i> EduSync</a
+				>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -24,16 +30,16 @@
 				<div class="collapse navbar-collapse" id="navbarColor01">
 					<ul class="navbar-nav me-auto">
 						<li class="nav-item">
-							<a class="nav-link active" href="#"
-								>Home
-								<span class="visually-hidden">(current)</span>
-							</a>
+							<a class="nav-link" href="#"
+								><i class="fa-solid fa-list-ul fa-lg"></i>All
+								students</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">All students</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Add student</a>
+							<a class="nav-link" href="#"
+								><i class="fa-solid fa-plus fa-lg"></i>Add
+								student</a
+							>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">About</a>
@@ -42,6 +48,36 @@
 				</div>
 			</div>
 		</nav>
+
+		<div class="container-fluid">
+			<h3 class="m-4">All students</h3>
+			<div class="row">
+				<div class="col-12">
+					<div class="card border-primary ms-4 me-4 mb-4">
+						<div class="card-header">Header</div>
+						<div class="card-body">
+							<h4 class="card-title">Primary card title</h4>
+							<p class="card-text">
+								Some quick example text to build on the card
+								title and make up the bulk of the card's
+								content.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="mt-auto mb-4">
+			<div class="text-center">
+				<span>
+					Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					EduSync<
+				</span>
+			</div>
+		</footer>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
