@@ -12,3 +12,4 @@ def index(request):
 
 def view_student(request, id):
     student = Student.objects.get(pk=10)
+    return HttpResponseRedirect(reverse("index"))
