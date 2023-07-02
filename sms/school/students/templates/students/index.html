@@ -83,7 +83,11 @@
 												<td>{{ student.email}}</td>
 												<td>{{student.field_of_study}}</td>
 												<td>{{ student.gpa}}</td>
-												<td>Actions</td>
+												<td>
+													<button type="button" class="btn btn-sucess me-1" href="{% url 'view_student' student.id%}" data-bs-toggle="model"
+													data-bs-target="#myModal{{student.id}}">
+													<i class="fa-solid fa-circle-info"></i></button>
+												</td>
 											</tr>
 											{% endfor%}
 										</tbody>
