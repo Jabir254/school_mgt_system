@@ -7,6 +7,10 @@ from .forms import StudentForm
 
 
 # Create your views here.
+def landing(request):
+  return render(request, 'students/landing.html')
+
+
 def index(request):
   return render(request, 'students/index.html', {
     'students': Student.objects.all()
