@@ -1,14 +1,18 @@
 {% extends 'students/base.html' %}
 
 {% block body %}
-	<h1 class="d-flex justify-content-center">Transform Your School's Efficiency with our All-in-One Management Platform</h1>
-	<div class="d-flex flex-row justify-content-center">
+	<h1 class="text-center mt-3 mb-3">Transform Your School's Efficiency with our All-in-One Management Platform</h1>
+	<p class="fs-3 text-center">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus sint est aliquid odio similique fugit sunt optio ab ex excepturi.
+	</p>
+	<div class="d-flex flex-row justify-content-around">
 		<div class="p-2">
 			<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-				<div class="card-header">Header</div>
+				<div class="card-header">Management</div>
 				<div class="card-body">
-				  <h4 class="card-title">Primary card title</h4>
-				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <p class="card-text">
+					A comprehensive school management system that streamlines administrative tasks, facilitates communication between staff, students, and parents, and provides real-time access to student records and academic progress.
+				  </p>
 				</div>
 			</div>
 		</div>
@@ -85,25 +89,35 @@
 		</div>
 	  </div>
 
-	  <form>
-		<fieldset>
-			<h4>Get In Touch</h4>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-			<div class="mb-3">
-				<label for="exampleInputEmail1" class="form-label">Email address</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-				<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-			  </div>
-			  <div class="mb-3">
-				<label for="exampleInputPassword1" class="form-label">Password</label>
-				<input type="password" class="form-control" id="exampleInputPassword1">
-			  </div>
-			  <div class="mb-3 form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				<label class="form-check-label" for="exampleCheck1">Check me out</label>
-			  </div>
-			  <button type="submit" class="btn btn-primary">Submit</button>
-		</fieldset>
+	  <form class="mt-5">
+			<!-- Name input -->
+			<div class="form-outline mb-4">
+			  <input type="text" id="form4Example1" class="form-control" />
+			  <label class="form-label" for="form4Example1">Name</label>
+			</div>
+		  
+			<!-- Email input -->
+			<div class="form-outline mb-4">
+			  <input type="email" id="form4Example2" class="form-control" />
+			  <label class="form-label" for="form4Example2">Email address</label>
+			</div>
+		  
+			<!-- Message input -->
+			<div class="form-outline mb-4">
+			  <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+			  <label class="form-label" for="form4Example3">Message</label>
+			</div>
+		  
+			<!-- Checkbox -->
+			<div class="form-check d-flex justify-content-center mb-4">
+			  <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+			  <label class="form-check-label" for="form4Example4">
+				Send me a copy of this message
+			  </label>
+			</div>
+		  
+			<!-- Submit button -->
+			<button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
 	  </form>
 
 {% endblock %}
