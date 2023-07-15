@@ -1,5 +1,7 @@
 {% extends 'students/base.html' %}
 
+{% load static %}
+
 {% block body %}
 	<h1 class="text-center mt-3 mb-3">Transform Your School's Efficiency with our All-in-One Management Platform</h1>
 	<p class="fs-3 text-center">
@@ -15,11 +17,11 @@
 				  </p>
 		  </div>
 		  <div class="col">
-			<img src="..." class="img-fluid" alt="Responsive image">
+			<img src="{% static 'images/image1.jpeg'%}" class="img-fluid" alt="Responsive image">
 		  </div>
 		  <div class="w-100"></div>
 		  <div class="col">
-			<img src="..." class="img-fluid" alt="Responsive image">
+			<img src="{% static 'images/image2.jpeg' %}" class="img-fluid" alt="Responsive image">
 		  </div>
 		  <div class="col">
 			<div class="card-header">Management</div>
@@ -35,7 +37,7 @@
 	
 
 	<a class="d-flex justify-content-center " href="#">
-		<button type="button" class="btn btn-outline-info btn-lg mt-5">About Us</button>
+		<button type="button" class="btn btn-outline-info btn-lg mt-5 mb-4">About Us</button>
 	</a>
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus suscipit debitis deserunt facilis obcaecati sint doloremque accusamus ex magnam corrupti magni repudiandae dolor, quo atque nesciunt, maxime aspernatur commodi iusto!</p>
