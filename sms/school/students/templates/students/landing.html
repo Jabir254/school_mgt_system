@@ -1,51 +1,79 @@
-{% extends 'students/base.html' %}
+{% extends 'students/base.html' %} {% load static %} {% block body %}
+<h1 class="text-center mt-3 mb-3">
+  Transform Your School's Efficiency with our All-in-One Management Platform
+</h1>
+<p class="fs-3 text-center">
+  A powerful tool that fosters collaboration among administrators, teachers, and
+  parents, ultimately providing a seamless educational experience for all
+  stakeholders.
+</p>
 
-{% load static %}
+<img
+  style="max-width: 100%; max-height: 20%"
+  class="img-fluid image-3"
+  src="{% static '/images/image3.jpeg' %} "
+  alt="image3"
+/>
 
-{% block body %}
-	<h1 class="text-center mt-3 mb-3">Transform Your School's Efficiency with our All-in-One Management Platform</h1>
-	<p class="fs-3 text-center">
-		A powerful tool that fosters collaboration among administrators, teachers, and parents, ultimately providing a seamless educational experience for all stakeholders.
-	</p>
+<div class="text-center mt-4">
+  <button type="button" class="btn btn-success">Get Started</button>
+</div>
 
+<section>
+  <h3 class="text-center mt-4">Why We are the Best</h3>
 
-	<img class="img-fluid image-3" src="{% static "/images/image3.jpeg"%} " alt="image3">
+  <div class="d-flex">
+    <div class="p-2 flex-fill">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="{% static '/images/image2.jpeg'%}"
+          alt="image1"
+        />
+        <div class="card-body">
+          <h5 class="card-title">School Management System</h5>
+          <p class="card-text">
+            Attendance Tracking: Effortlessly record and monitor student
+            attendance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        class="card-img-top"
+        src="{% static '/images/image3.jpeg' %}"
+        alt="image1"
+      />
+      <div class="card-body">
+        <h5 class="card-title">School Management System</h5>
+        <p class="card-text">
+          Attendance Tracking: Effortlessly record and monitor student
+          attendance.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        class="card-img-top"
+        src="{% static 'images/image1.jpeg' %}"
+        alt="image1"
+      />
+      <div class="card-body">
+        <h5 class="card-title">School Management System</h5>
+        <p class="card-text">
+          Attendance Tracking: Effortlessly record and monitor student
+          attendance.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<div class="text-center mt-4">
-		<button type="button" class="btn btn-success">Get Started</button>
-	</div>
-	
-
-	<section>
-		<h3 class="text-center mt-4">Why We are the Best</h3>
-
-		<div class="d-flex">
-			<div class="p-2 flex-fill">
-				<div class="card">
-					<img class="card-img-top" src="{% static 'css/images1.jpeg'%}" alt="image1">
-					<div class="card-body">
-						<h5 class="card-title">School Management System</h5>
-						<p class="card-text">Attendance Tracking: Effortlessly record and monitor student attendance.</p>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top" src="{% static 'css/images1.jpeg'%}" alt="image1">
-				<div class="card-body">
-					<h5 class="card-title">School Management System</h5>
-					<p class="card-text">Attendance Tracking: Effortlessly record and monitor student attendance.</p>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top" src="{% static 'images/image1.jpeg'%}" alt="image1">
-				<div class="card-body">
-					<h5 class="card-title">School Management System</h5>
-					<p class="card-text">Attendance Tracking: Effortlessly record and monitor student attendance.</p>
-				</div>
-			</div>
-			
-		  </div>
-	</section>
+<section>
+  <div class="container mt-4">
+    <h3 style="display: flex; justify-content: center">Learn More</h3>
+  </div>
+</section>
 
 {% endblock %}
-
